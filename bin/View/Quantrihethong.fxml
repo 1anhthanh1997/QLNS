@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="696.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pttk.QuantrihethongController">
+   <children>
+      <Label layoutX="14.0" layoutY="23.0" text="Quản trị hệ thống">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="76.0" />
+      <Label layoutX="43.0" layoutY="59.0" text="Tạo tài khoản:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="130.0" layoutY="93.0" text="Tên đăng nhập:" />
+      <Label layoutX="160.0" layoutY="135.0" text="Mật khẩu:" />
+      <TextField fx:id="jtfID" layoutX="230.0" layoutY="89.0" prefHeight="25.0" prefWidth="308.0" />
+      <Label layoutX="110.0" layoutY="182.0" text="Nhập lại mật khẩu:" />
+      <Button layoutX="331.0" layoutY="303.0" mnemonicParsing="false" onAction="#register" text="Xác nhận đăng kí" />
+      <Label layoutX="147.0" layoutY="263.0" text="Chức vụ:" />
+      <Label layoutX="139.0" layoutY="223.0" text="Tên nhân viên:" />
+      <TextField fx:id="jtfname" layoutX="230.0" layoutY="219.0" prefHeight="25.0" prefWidth="308.0" />
+      <TextField fx:id="jtfposition" layoutX="230.0" layoutY="259.0" prefHeight="25.0" prefWidth="308.0" />
+      <TableView fx:id="tableView" layoutX="7.0" layoutY="520.0" onMouseClicked="#tableClick" prefHeight="168.0" prefWidth="687.0">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="147.0" text="Tên đăng nhập" />
+          <TableColumn fx:id="colPassword" prefWidth="149.0" text="Mật khẩu" />
+            <TableColumn fx:id="colName" prefWidth="183.0" text="Tên nhân viên" />
+            <TableColumn fx:id="colPosition" prefWidth="205.0" text="Chức vụ" />
+        </columns>
+      </TableView>
+      <Button layoutX="500.0" layoutY="348.0" mnemonicParsing="false" onAction="#edit" prefHeight="25.0" prefWidth="61.0" text="Sửa" />
+      <Button layoutX="577.0" layoutY="348.0" mnemonicParsing="false" onAction="#delete" prefHeight="25.0" prefWidth="61.0" text="Xóa" />
+      <Label layoutX="210.0" layoutY="459.0" text="Tìm kiếm:" />
+      <TextField fx:id="jtfsearch" layoutX="272.0" layoutY="455.0" prefHeight="25.0" prefWidth="252.0" />
+      <Button layoutX="421.0" layoutY="348.0" mnemonicParsing="false" onAction="#makenew" prefHeight="25.0" prefWidth="61.0" text="Tạo mới" />
+      <Button layoutX="582.0" layoutY="14.0" mnemonicParsing="false" onAction="#logout" prefHeight="20.0" prefWidth="100.0" text="Đăng xuất" />
+      <PasswordField fx:id="jtfpassword" layoutX="230.0" layoutY="131.0" prefHeight="25.0" prefWidth="308.0" />
+      <PasswordField fx:id="jtfpassword2" layoutX="230.0" layoutY="178.0" prefHeight="25.0" prefWidth="308.0" />
+      <Button layoutX="459.0" layoutY="14.0" mnemonicParsing="false" onAction="#MainMenu" prefHeight="25.0" prefWidth="100.0" text="Main Menu" />
+   </children>
+</AnchorPane>

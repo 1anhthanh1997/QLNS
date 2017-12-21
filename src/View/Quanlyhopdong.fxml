@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="696.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pttk.QuanlyhopdongController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Quản lý hợp đồng">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="615.0" layoutY="23.0" mnemonicParsing="false" onAction="#logout" text="Đăng xuất" />
+      <Button layoutX="509.0" layoutY="23.0" mnemonicParsing="false" onAction="#MainMenu" text="Main Menu" />
+      <TextField fx:id="jtfID" layoutX="244.0" layoutY="82.0" prefHeight="25.0" prefWidth="325.0" />
+      <Label layoutX="162.0" layoutY="86.0" text="ID:" />
+      <TextField fx:id="jtfname" layoutX="244.0" layoutY="121.0" prefHeight="25.0" prefWidth="325.0" />
+      <TextField fx:id="jtfID2" layoutX="244.0" layoutY="158.0" prefHeight="25.0" prefWidth="325.0" />
+      <TextField fx:id="jtftype" layoutX="244.0" layoutY="199.0" prefHeight="25.0" prefWidth="325.0" />
+      <TextField fx:id="jtfdateofsigning" layoutX="244.0" layoutY="240.0" prefHeight="25.0" prefWidth="325.0" />
+      <TextField fx:id="jtfexpirationdate" layoutX="244.0" layoutY="280.0" prefHeight="25.0" prefWidth="325.0" />
+      <TextField fx:id="jtfsalary" layoutX="244.0" layoutY="323.0" prefHeight="25.0" prefWidth="325.0" />
+      <Label layoutX="143.0" layoutY="125.0" text="Họ và tên:" />
+      <Label layoutX="134.0" layoutY="162.0" text="Số hợp đồng:" />
+      <Label layoutX="130.0" layoutY="203.0" text="Loại hợp đồng:" />
+      <Label layoutX="138.0" layoutY="244.0" text="Ngày kí HĐ:" />
+      <Label layoutX="122.0" layoutY="284.0" text="Ngày hết hạn HĐ:" />
+      <Label layoutX="121.0" layoutY="327.0" text="Lương thỏa thuận:" />
+      <Button layoutX="609.0" layoutY="390.0" mnemonicParsing="false" onAction="#delete" prefHeight="25.0" prefWidth="62.0" text="Xóa" />
+      <Button layoutX="534.0" layoutY="390.0" mnemonicParsing="false" onAction="#edit" prefHeight="25.0" prefWidth="62.0" text="Sửa" />
+      <Button layoutX="457.0" layoutY="390.0" mnemonicParsing="false" onAction="#add" prefHeight="25.0" prefWidth="62.0" text="Thêm" />
+      <Button layoutX="379.0" layoutY="390.0" mnemonicParsing="false" onAction="#makenew" prefHeight="25.0" prefWidth="62.0" text="Tạo mới" />
+      <TableView fx:id="tableView3" layoutY="496.0" prefHeight="200.0" prefWidth="700.0">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="colName" prefWidth="155.0" text="Họ và tên" />
+            <TableColumn fx:id="colID2" prefWidth="79.0" text="Số hợp đồng" />
+            <TableColumn fx:id="colType" prefWidth="89.0" text="Loại hợp đồng" />
+            <TableColumn fx:id="colDateofsigning" prefWidth="86.0" text="Ngày kí HĐ" />
+            <TableColumn fx:id="colExpirationdate" prefWidth="107.0" text="Ngày hết hạn HĐ" />
+            <TableColumn fx:id="colSalary" prefWidth="108.0" text="Lương thỏa thuận" />
+        </columns>
+      </TableView>
+      <TextField fx:id="jtfsearch" layoutX="258.0" layoutY="442.0" prefHeight="25.0" prefWidth="286.0" />
+      <Label layoutX="187.0" layoutY="446.0" text="Tìm kiếm:" />
+   </children>
+</AnchorPane>
